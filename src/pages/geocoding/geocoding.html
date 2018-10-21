@@ -1,0 +1,30 @@
+
+<ion-header>
+
+  <ion-navbar color="secondary">
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>GeocodingPage</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <h3>Single geocoding</h3>
+  <div id="map_canvas1">
+    <table class="smallPanel">
+      <tr>
+        <td><input ion-input type="text" #search_address ><button ion-button (click)="onButton1_click($event)">Search</button></td>
+      </tr>
+    </table>
+  </div>
+
+  <hr>
+
+  <h3>Batch geocoding</h3>
+  <div id="map_canvas2">
+    <button ion-button (click)="onButton2_click($event)">Batch geocoding!</button>
+  </div>
+</ion-content>

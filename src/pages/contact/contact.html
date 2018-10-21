@@ -1,0 +1,48 @@
+<ion-header>
+    <ion-navbar color="secondary">
+     
+      <ion-title>
+       Contact
+      </ion-title>
+      
+    </ion-navbar>
+  </ion-header>
+
+<ion-content padding>
+<ion-grid>
+  <ion-row>
+    <ion-col col-lg-6 col-md-6 col-sm-12>
+        <h2><u> Contact Us</u></h2>
+      <address>
+        <h3> Head Office </h3>
+        <ul type="number">
+          <li> Ibadan</li>
+          <li>Lagos</li>
+        </ul>
+        <h3> Branch Office </h3>
+        <ul type="number">
+            <li> Ife </li>
+          </ul>
+      </address>
+    </ion-col>
+    <ion-col ol-lg-6 col-md-6 col-sm-12>
+      
+          <ion-label>Contact</ion-label>
+        
+      <ion-item>
+          <ion-input type="text" placeholder="Your Full Name"></ion-input>
+        </ion-item>
+      <ion-item>
+          <ion-input type="email" placeholder="Your Email Address"></ion-input>
+        </ion-item>
+      <ion-item>
+          <ion-textarea type="text" placeholder="Your Message"></ion-textarea>
+
+        </ion-item>
+      
+        <button ion-button block style="margin-top: 20px;" (click) = "submit()" color="secondary">Submit</button>
+        
+      </ion-col>
+  </ion-row>
+</ion-grid>
+</ion-content>

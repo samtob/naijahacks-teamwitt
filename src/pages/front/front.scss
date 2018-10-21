@@ -1,0 +1,23 @@
+page-front {
+    ion-content {
+        /*background: color($colors, primary);*/
+        
+        background: url('../assets/imgs/BACKGROUND.jpg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        background-attachment: fixed;
+        color: color($colors, light);
+        }
+    .func1 {
+        display: flex;
+        flex-direction: right;
+    }
+    .func1 button {
+        flex: 1
+    }
+    .desc, .icon, .temp, .location {
+        text-align: center;
+    }
+    
+}

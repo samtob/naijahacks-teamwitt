@@ -1,0 +1,22 @@
+<ion-header>
+    <ion-navbar color="secondary">
+      <ion-title>Register</ion-title>
+    </ion-navbar>
+  </ion-header>
+  
+  <ion-content padding>
+
+    <ion-label> Register/LogIn to Proceed </ion-label>
+  
+  <button (click) ="link()" ion-button block color="primary" icon-start><ion-icon slot="start" name="logo-facebook"></ion-icon>LogIn With FaceBook </button>
+  
+    <button (click) ="link()" ion-button block color="secondary" icon-start><ion-icon item-start  name="logo-twitter"></ion-icon>LogIn With Twitter </button>
+    
+      <button (click) ="link()" ion-button  block color="danger" icon-start><ion-icon item-start name="logo-goggle-plus"></ion-icon>LogIn With Goggle</button>
+    
+      <h1>OR REGISTER WITH EMAIL</h1>
+
+        <button ion-button (click) ="register()" expand="full" color="warning">... Via Email</button>
+       
+  </ion-content>
+  

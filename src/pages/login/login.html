@@ -1,0 +1,35 @@
+<!--
+  Generated template for the LoginPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+    
+    <ion-navbar color="secondary">
+      <ion-title>Login</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding class="h1">
+      <h1 text-center style="color: #8af97e;"> LogIn </h1>
+      <ion-list>
+          <ion-col width-50 offset-25>
+              <ion-item>
+                  <ion-label style="color: #8af97e;" floating > Username </ion-label>
+                  <ion-input #username type="text" name="username" placeholder="Your Username"></ion-input>
+              </ion-item>
+            </ion-col>
+              <ion-item>
+                  <ion-label style="color: #8af97e;" floating > Password </ion-label>
+                  <ion-input #password type="password" name="password" placeholder="Your Password"></ion-input>
+              </ion-item>
+
+                  <button ion-button style="margin-top: 200px;" block (click)="loginuser()" type="button" name="button">Login</button>
+                </ion-list>
+  
+  </ion-content>
+  
+

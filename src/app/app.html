@@ -1,18 +1,93 @@
+<div *ngIf="showSplash" class="splash">
+  
+    <div class="load"><div></div><div></div><div></div></div>
+    <style>
+      .splash {
+        height: 100%;
+        width: 100%;
+        background: rgb(69, 219, 76);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+      }
+    .load {
+      display: inline-block;
+      position: relative;
+      width: 64px;
+      height: 64px;
+    }
+    .load div {
+      display: inline-block;
+      position: absolute;
+      left: 6px;
+      width: 13px;
+      background: #fff;
+      animation: load 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+    }
+    .load div:nth-child(1) {
+      left: 6px;
+      animation-delay: -0.24s;
+    }
+    .load div:nth-child(2) {
+      left: 26px;
+      animation-delay: -0.12s;
+    }
+    .load div:nth-child(3) {
+      left: 45px;
+      animation-delay: 0;
+    }
+    @keyframes load {
+      0% {
+        top: 6px;
+        height: 51px;
+      }
+      50%, 100% {
+        top: 19px;
+        height: 26px;
+      }
+    }
+    
+    </style>
+    </div>
+
 <ion-menu [content]="content">
+
   <ion-header>
-    <ion-toolbar>
+    <ion-toolbar color="dark">
       <ion-title>Menu</ion-title>
+      <ion-buttons end>
+        <button ion-button>
+          <ion-icon name="close" (click)="close()"></ion-icon>
+        </button>
+      </ion-buttons>
     </ion-toolbar>
   </ion-header>
 
   <ion-content>
     <ion-list>
       <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">
-        {{p.title}}
+          <ion-icon [name]="p.icon" item-start></ion-icon>
+          {{p.title}}
+         
       </button>
     </ion-list>
-  </ion-content>
-
+  <ion-item>
+  <ion-label> Follow Us: </ion-label>
+    </ion-item>
+  <ion-item>
+      <div>
+     <a href="https://www.facebook.com/witttechnologies"><ion-icon id="facebook" name="logo-facebook" color="primary" ></ion-icon></a> 
+      <a href="https://www.twitter.com/tobicode1"><ion-icon style="color: #34fcf0;" id="facebook" name="logo-twitter"></ion-icon></a> 
+      <a href="https://www.instagram.com/witttechnologies"><ion-icon style="color: #ff4d82;" id="facebook" name="logo-instagram"></ion-icon></a> 
+      <a href="https://www.youtube.com/witttechnologies"> <ion-icon id="facebook" name="logo-youtube" color="danger"></ion-icon></a> 
+      </div>
+  </ion-item>
+  <div>
+      <p slot="start"><a href="/about"> Need Help?</a></p>
+      <p slot="end"><a href="/contact"> Contact Us</a></p>
+  </div> 
+</ion-content>
 </ion-menu>
 
 <!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->

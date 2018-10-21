@@ -1,0 +1,52 @@
+
+
+<ion-header>
+
+    <ion-navbar color="secondary">
+      <ion-title>Welcome</ion-title>
+    </ion-navbar>
+  
+  </ion-header>
+  
+<ion-content>
+
+    <ion-slides pager (ionSlideDidChange)="slideChanged()">
+   <ion-slide>
+            <img style="width: 150px; height: 150px;" src="../assets/imgs/icon.png" height="50px" width="50px" alt="image"/>
+            <div style="text-align: center;"> Made with <ion-icon style="color: red;font-size: 18px;" name="heart"></ion-icon> in Nigeria</div>
+            <p> Designed and Developed by <a style="list-style: none; text-decoration: none;" href="www.witttech.site">Tobi Samuel</a></p>
+  </ion-slide>
+  <ion-slide style="background: url('../assets/imgs/BACKGROUND.jpg'); height: 100%; width: 100%;">
+            <div class="drag">
+                <ion-icon ios="ios-analytics" md="md-analytics" color="primary"></ion-icon>
+            </div>
+            <div class="hello">
+                <h2> Welcome </h2>
+                <p> Welcome to AgroTech </p>
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="drag">
+                <ion-icon ios="ios-chatboxes" md="md-chatboxes" color="primary"></ion-icon>
+            </div>
+            <div class="hello">
+                <h2> VIsion </h2>
+  
+       <p>Our vision is to spread technology In Agriculture throughout the Nigeria, her diaspora and even throughout Africa.<br>
+           We aim to use techology to improve agronomy and to increase the standard of living of people </p>
+  
+            </div>
+        </ion-slide>
+        <ion-slide>
+            <div class="drag">
+                <ion-icon ios="ios-trophy" md="md-trophy" color="primary"></ion-icon>
+            </div>
+            <div class="hello">
+                <h2>Mission </h2>
+                <p>  </p>
+            </div>
+        </ion-slide>
+    </ion-slides>
+    <button color="primary" style="background: rgb(41, 223, 50); color: #ff0000;"  text-center full ion-button (click) = "skip()" id="skip">{{ skipmsg }}</button>
+  </ion-content>
+  

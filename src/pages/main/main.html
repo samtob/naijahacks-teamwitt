@@ -1,0 +1,97 @@
+<!--
+  Generated template for the MainPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+    <ion-navbar color="secondary">
+      <ion-title item-start>main</ion-title>
+      <ion-buttons end>
+      <button style="color: #fff;" ion-button item-end clear (click)="profile()"> Profile</button>
+      <button style="color: #fff;" ion-button item-end clear (click)="logout()"> LogOut</button>
+    </ion-buttons>
+    </ion-navbar>
+  
+  </ion-header>
+  
+  
+  <ion-content padding>
+  <ion-grid>
+    <ion-row>
+    <ion-col col-lg-4 col-md-6 col-sm-12 col-xs-12>
+        <ion-card>
+            <img src="assets/imgs/maize.jpg" alt="image" height="300px"/>
+            <ion-card-content>
+              <ion-card-title>
+                Maize
+            </ion-card-title>
+            A Maize is a type of fruit. The mango tree is native to South Asia, from where it has
+            been taken to become one of the most widely cultivated fruits in the tropics.</ion-card-content>
+            <ion-item item-end>
+              <a  (click)= "maize()" style="text-align: right; color: #acee7e; text-decoration: none; font-style: none;"href="#"> Click to view more </a>
+            </ion-item>
+            </ion-card>
+    </ion-col>
+    <ion-col col-lg-4 col-md-6 col-sm-12 col-xs-12>
+        <ion-card>
+            <img src="assets/imgs/palm.jpg" alt="image" height="300px"/>
+            <ion-card-content>
+              <ion-card-title>
+               Palm
+            </ion-card-title>
+            A palm is a type of fruit. The mango tree is native to South Asia, from where it has
+            been taken to become one of the most widely cultivated fruits in the tropics.</ion-card-content>
+            <ion-item item-end>
+              <a  (click)= "palm()" style="text-align: right; color: #acee7e; text-decoration: none; font-style: none;" href="#"> Click to view more </a>
+            </ion-item>
+            </ion-card>
+    </ion-col>
+    <ion-col col-lg-4 col-md-6 col-sm-12 col-xs-12>
+        <ion-card>
+            <img src="assets/imgs/poultry.png" alt="image" height="300px"/>
+            <ion-card-content>
+              <ion-card-title>
+                Mango
+            </ion-card-title>
+            A mango is a type of fruit. The mango tree is native to South Asia, from where it has
+            been taken to become one of the most widely cultivated fruits in the tropics.</ion-card-content>
+            <ion-item item-end>
+              <a  (click)= "poultry()" style="text-align: right; color: #acee7e; text-decoration: none; font-style: none;"href="#"> Click to view more </a>
+            </ion-item>
+            </ion-card>
+    </ion-col>
+    <ion-col col-lg-4 col-md-6 col-sm-4 col-xs-12>
+      
+  <ion-card>
+      <img src="assets/imgs/soya.jpg" alt="image" height="300px"/>
+      <ion-card-content>
+        <ion-card-title>
+         Soya
+      </ion-card-title>
+      Maize also known as corn, is a cereal grain first domesticated by indigenous
+      peoples in southern Mexico. The leafy stalk of the plant produces seperate pollen and ovuliferous inflorescences or ears, which are fruits, yielding kernels or seeds
+      </ion-card-content>
+      <ion-item item-end>
+          <a (click)="soya()" style="color: #acee7e; text-decoration: none; font-style: none;" href="#"> Click to view more </a>
+      </ion-item>
+      </ion-card>
+    </ion-col>
+    <ion-col col-lg-4 col-sm-12 col-md-6 col-xs-12>
+        <ion-card>
+            <img src="assets/imgs/onion.jpg" alt="image" height="200px"/>
+            <ion-card-content>
+              <ion-card-title>
+                Onion
+            </ion-card-title>
+            </ion-card-content>
+            <ion-item item-end>
+                <a )(click)="onion()" style="color: #acee7e; float: right; text-decoration: none; font-style: none;"href="#"> Click to view more </a>
+            </ion-item>
+        </ion-card>
+    </ion-col>
+  </ion-row>
+  </ion-grid>
+  </ion-content>
+  
